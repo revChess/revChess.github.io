@@ -12,7 +12,9 @@ const SETTINGS_BTN = $('#btn-settings');
 const REVIEW_ASIDE = $('#aside-review');
 const LEARN_ASIDE = $('#aside-learn');
 const MANAGE_ASIDE = $('#aside-manage');
-const SETTINGS_ASIDE = $('#aside-settings')
+const SETTINGS_ASIDE = $('#aside-settings');
+
+const POPUP_OVERLAY = $('#transparent-overlay');
 
 const reviewer = new Chess();
 

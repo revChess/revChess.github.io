@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="revChess allows you to review chess easily and for free. No paywall or premium subscription.">
 
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
         <link rel="stylesheet" href="./style.css">
@@ -10,7 +11,13 @@
         <title>revChess</title>
     </head>
     <body>
-        <main>
+        <div id="transparent-overlay" aria-hidden="true" hidden>
+            <div class="popup-box modal center">
+                <div class="popup-box-options"></div>
+            </div>
+        </div>
+
+        <main class="center">
             <!-- we want to disable right click menu -->
             <div class="col-6" id="chess-board" oncontextmenu="return false"></div>
 
@@ -40,12 +47,13 @@
             </div>
         </main>
 
-        <footer>revChess v0.1b | <a href="./licenses/LICENSING.txt">Licensing</a> | &copy;2023 Rheild</footer>
+        <footer>revChess v0.1b | <a href="./licenses/LICENSING.txt">licensing</a> | &copy;2023 rheild</footer>
 
         <script src="./js/chess.js"></script>
         <script src="./js/miniLib.js"></script>
         <script src="./js/globals.js"></script>
         <script defer src="./js/render.js"></script>
         <script defer src="./js/dom.js"></script>
+        <script defer src="./js/init.js"></script>
     </body>
 </html>

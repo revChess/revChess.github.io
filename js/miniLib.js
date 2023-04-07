@@ -16,6 +16,7 @@ function $(sel) {
 };
 
 $.removeChildren = function (el) {
+    // this wrapper function makes code cleaner
     el.innerHTML = '';
 }
 
@@ -30,9 +31,11 @@ $.createElement = function (tag='div', attributeObj={}, innerHtml='') {
 }
 
 $.hideElement = function (el) {
+    el.setAttribute('aria-hidden', 'true');
     el.style.display = 'none';
 }
 
 $.showElement = function (el) {
+    el.setAttribute('aria-hidden', 'false');
     el.style.display = 'block';
 }

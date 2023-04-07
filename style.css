@@ -1,15 +1,23 @@
 * {
-    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 html {
-    background-color: rgb(65, 7, 29);
+    color: white;
+    background-color: #41071d;
 
     font-family: Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+}
+
+/* .center */
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* main and footer */
@@ -19,9 +27,6 @@ main {
 
     width: 65vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 footer {
@@ -39,6 +44,7 @@ a {
 button {
     border-radius: 0;
     border: none;
+    cursor: pointer;
 }
 
 /* #chess-board, .chess-piece */
@@ -97,6 +103,37 @@ button {
 
 #aside-review {
     display: block;
+}
+
+/* annoying popups (jk) */
+#transparent-overlay {
+    background-color: #00000046;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    color: black;
+}
+
+.popup-box {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    z-index: 1000;
+}
+
+.popup-box-options > button {
+    padding: 8px;
+    border-radius: 3px;
+    background-color:#41071d;
+    color: white;
+    margin: 10px 0;
 }
 
 /* grid (scuffed) */
