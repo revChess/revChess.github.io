@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link rel="stylesheet" href="./style.css">
+
+        <title>revChess</title>
+    </head>
+    <body>
+        <main>
+            <!-- we want to disable right click menu -->
+            <div class="col-6" id="chess-board" oncontextmenu="return false"></div>
+
+            <div class="col-6" id="chess-aside">
+                <nav id="main-nav">
+                    <button id="btn-review">Review</button>
+                    <button id="btn-learn">Learn</button>
+                    <button id="btn-manage">Manage Revs</button>
+                    <button id="btn-settings">Settings</button>
+                </nav>
+                
+                <div class="aside-box" id="aside-review">
+                    review section
+                </div>
+
+                <div class="aside-box" id="aside-learn">
+                    learn section
+                </div>
+
+                <div class="aside-box" id="aside-manage">
+                    manage revs section
+                </div>
+
+                <div class="aside-box" id="aside-settings">
+                    settings section
+                </div>
+            </div>
+        </main>
+
+        <footer>revChess v0.1b | <a href="./licenses/LICENSING.txt">Licensing</a> | &copy;2023 Rheild</footer>
+
+        <script src="./js/chess.js"></script>
+        <script src="./js/miniLib.js"></script>
+        <script src="./js/globals.js"></script>
+        <script defer src="./js/render.js"></script>
+        <script defer src="./js/dom.js"></script>
+    </body>
+</html>

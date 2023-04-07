@@ -1,0 +1,120 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(65, 7, 29);
+
+    font-family: Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* main and footer */
+main {
+    background-color: #350417;
+    border-radius: 5px;
+
+    width: 65vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+}
+
+/* tags */
+a {
+    color: white;
+}
+
+button {
+    border-radius: 0;
+    border: none;
+}
+
+/* #chess-board, .chess-piece */
+#chess-board {
+    cursor: pointer;
+    width: inherit;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    background-image: url(./staunty/board.svg);
+    border-radius: 5px;
+}
+
+#chess-board > * {
+    background-color: transparent;
+}
+
+#chess-board > *::selection {
+    background: transparent;
+}
+
+.chess-piece {
+    width: 6.25%;
+    height: 12.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1/1;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* #chess-aside and children */
+#chess-aside {
+    aspect-ratio: 1/1;
+
+    padding: 7px 25px;
+}
+
+#main-nav {
+    padding: 10px 0 25px 0;
+}
+
+#main-nav > button {
+    background-image: linear-gradient(rgb(199, 199, 199), rgb(121, 121, 121));
+    cursor: pointer;
+}
+
+.aside-box {
+    display: none;
+}
+
+#aside-review {
+    display: block;
+}
+
+/* grid (scuffed) */
+
+.col-auto, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-quarter, .col-third, .col-half, .col-two-thirds, .col-three-quarters, .col-full {
+    float: left;
+    word-wrap: break-word;
+}
+
+.col-1 {width: 08.3333%!important;}
+.col-2 {width: 16.6666%!important;}
+.col-3, .col-quarter {width: 25%!important;}
+.col-4, .col-third {width: 33.3333%!important;}
+.col-5 {width: 41.6666%!important;}
+.col-6, .col-half {width: 50%!important;}
+.col-7 {width: 58.3333%!important;}
+.col-8, .col-two-thirds {width: 66.6666%!important;}
+.col-9, .col-three-quarters {width: 75%!important;}
+.col-10 {width: 83.3333%!important;}
+.col-11 {width: 91.6666%!important;}
+.col-12, .col-full {width: 100%!important;}

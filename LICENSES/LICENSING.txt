@@ -1,0 +1,23 @@
+The entirety of this program, except as otherwise noted, 
+is distributed under the Affero General Public License v3, 
+as distributed by GNU. It is available at 
+https://gnu.org/licenses/agpl-3.0.txt or at the 
+"AGPL-v3.txt" file of this same directory.
+
+"chess.js" (found in the same directory as index.html)
+is licensed under the BSD-2 license. It can be found at the
+top of the file, at the "BSD-2.txt" file of this same
+directory, and at:
+https://opensource.org/license/bsd-2-clause/.
+Repository:
+https://github.com/jhlywa/chess.js
+
+The chess pieces and chess board were made possible with 
+Lichess contributors. The repository can be found below:
+https://github.com/lichess-org/lila
+
+The Lato font was made by Łukasz Dziedzic. You can learn
+more at https://latofonts.com. The font is licensed under
+the OFL v1.1 as distributed by SIL. You can obtain a copy
+of it in "OFL-v1.1.txt" of this same directory or at:
+https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
