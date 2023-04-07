@@ -14,10 +14,11 @@
                         ['I understand', 'Reload', 'Notifications'],
                         async response=>{
                             if (response === 'Reload') {
-                                setTimeout(()=>{location.reload()}, 3000);
+                                setTimeout(()=>{location.reload()}, 1000);
                             } else if (response === 'Notifications') {
                                 await Notification.requestPermission();
-                                setTimeout(()=>{location.reload()}, 3000);
+                                await navigator.storage.persist();
+                                setTimeout(()=>{location.reload()}, 2000);
                             }
                         }
                     );
